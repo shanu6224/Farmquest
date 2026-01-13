@@ -30,7 +30,7 @@ if "logged_in" not in st.session_state:
 # CERTIFICATE FUNCTION
 # -------------------------------------------------
 def generate_certificate(username):
-    file_path = f"/mnt/data/{username}_FarmQuest_Certificate.pdf"
+    file_path = f"{username}_FarmQuest_Certificate.pdf"
 
     doc = SimpleDocTemplate(file_path, pagesize=A4)
     styles = getSampleStyleSheet()
@@ -409,3 +409,4 @@ with tab4:
                 )
     else:
         st.warning("❌ Complete all 10 levels to unlock certificate")
+
