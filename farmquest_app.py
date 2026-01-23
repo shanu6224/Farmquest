@@ -334,10 +334,19 @@ with tab3:
 # -------------------------
 with tab4:
     st.header("❗ Problems")
-    for p in PROBLEM: st.write("•", p)
+    for p in PROBLEM:
+        st.write("•", p)
+    
     st.header("🤝 Government Schemes")
     for scheme, points in GOV_SCHEMES.items():
-        st.write(f"• {scheme} — {points[-1]}")  # show link
+        st.subheader(scheme)
+        for p in points:
+            if p.startswith("மூல / இணைப்பு") or p.startswith("Link:"):
+                # Display link as clickable
+                link_text = p.split(":")[-1].strip()
+                st.markdown(f"[🔗 {link_text}]({link_text})")
+            else:
+                st.write("•", p)
 
     st.divider()
     if st.session_state.level > 10:
@@ -347,4 +356,5 @@ with tab4:
                 st.download_button("⬇️ Download PDF", f, file_name="FarmQuest_Certificate.pdf")
     else:
         st.warning("❌ Complete all 10 levels to unlock certificate")
+
 
