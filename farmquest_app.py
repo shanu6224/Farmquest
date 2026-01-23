@@ -108,12 +108,48 @@ if language == "English":
         "Supports rural development"
     ]
     GOV_SCHEMES = {
-        "PMFBY – Crop Insurance": ["Covers losses from pre-sowing to post-harvest", "Low premium subsidized by government", "Technology-based yield estimation", "Link: https://pmfby.gov.in"],
-        "PM-KISAN": ["Direct income support via DBT", "Helps buy seeds, fertilizers, pesticides", "Reduces debt and improves cash flow", "Link: https://pmkisan.gov.in"],
-        "PMKSY – Micro Irrigation": ["Up to 100% subsidy for small farmers", "Saves 30–50% water", "Increases yield by 20–50%", "Link: https://pmksy.gov.in"],
-        "Organic Farming Support": ["Improves soil health", "Produces chemical-free food", "Eco-friendly and climate resilient", "Link: https://pgsindia-ncof.gov.in"],
-        "Farmer Training (TNAU)": ["Free expert guidance", "High-yield techniques", "Sustainable practices", "Link: https://www.tnau.ac.in/"]
+        "PM-KISAN": [
+            "Direct Income Support: Provides financial assistance to small and marginal farmers, improving their purchasing power for essential agricultural inputs.",
+            "Direct Benefit Transfer (DBT): Funds are transferred directly to the bank accounts of beneficiaries, ensuring transparency and reducing corruption or leakage.",
+            "Assistance for Inputs: Helps farmers purchase seeds, fertilizers, and pesticides, especially during rising costs.",
+            "Reduced Debt Reliance: Decreases dependency on high-interest loans from informal money lenders.",
+            "Improved Cash Flow: The three-installment structure provides liquidity to farmers exactly when needed for cultivation cycles.",
+            "Comprehensive Coverage: Designed to cover all landholding farmers' families, supporting both agricultural needs and domestic expenses.",
+            "Source / Link: [PM-KISAN Official](https://share.google/jnXxl3n8oVdnkJe8I)"
+        ],
+        "PMFBY – Crop Insurance": [
+            "Comprehensive Coverage: Protects against pre-sowing to post-harvest losses, including localized risks and post-harvest damages from cyclones, floods, etc.",
+            "Low Premiums: Aims to increase penetration by keeping farmer premium shares low, subsidized by central and state governments.",
+            "Voluntary for Non-Loanee Farmers: Compulsory for farmers with crop loans but optional for others.",
+            "Technology Integration: Promotes using technology for yield estimation and efficient claim processing.",
+            "Income Stabilization: Supports farmers' income to keep them in farming, promotes credit flow, and ensures food security.",
+            "Source / Link: [PMFBY Official](https://share.google/jnXxl3n8oVdnkJe8I)"
+        ],
+        "PMKSY – Micro Irrigation": [
+            "High Financial Assistance: Small and marginal farmers can receive up to 100% subsidy (often capped per hectare), while large farmers receive up to 75% for micro-irrigation systems.",
+            "Water Conservation: Saves 30% to 50% more water compared to traditional flood irrigation methods.",
+            "Increased Productivity: Boosts crop yields by 20% to 50% through precise, direct-to-root water and nutrient delivery (fertigation).",
+            "Reduced Input Costs: Lowers expenditure on labor, fertilizers, and electricity for pumping.",
+            "Improved Crop Quality: Ensures consistent moisture levels, leading to higher quality produce and better pest/disease control.",
+            "Optimal Land Use: Highly suitable for diverse terrains and marginal lands.",
+            "Source / Link: [PMKSY Official](https://share.google/MRCbNEjHRKQJaugRJ)"
+        ],
+        "Organic Farming Support": [
+            "Environmental Sustainability: Reduces soil erosion, prevents groundwater pollution from chemical runoff, and promotes biodiversity by creating habitats for beneficial organisms.",
+            "Soil Health Enhancement: Continuous use of organic manure and compost increases soil fertility and long-term productivity.",
+            "Economic Benefits for Farmers: Organic farming reduces dependence on expensive synthetic inputs, leading to lower cultivation costs and higher income due to premium market prices.",
+            "Healthier Food Production: Produces food free from harmful synthetic pesticide residues, often with higher nutritional value.",
+            "Climate Change Mitigation: Organic methods typically require less energy and contribute to higher carbon sequestration in the soil.",
+            "Source / Link: [TNAU Organic Farming](https://share.google/LcCgauk8WZlMffh6V)"
+        ],
+        "Farmer Training (TNAU)": [
+            "Financial & Resource Accessibility: Eliminates cost barriers, making expert knowledge available to small and marginal farmers. Includes training on accessing government subsidies for machinery.",
+            "Increased Yields and Quality: Covers high-yield techniques, integrated pest management (IPM), and improved irrigation, leading to higher productivity and better produce quality.",
+            "Adoption of Sustainable Practices: Teaches efficient resource use, reduces reliance on chemical pesticides and fertilizers, improves soil health, and protects the ecosystem.",
+            "Source / Link: [TNAU Agritech Portal](https://share.google/sek8t8VcUSNS31fRE)"
+        ]
     }
+
 else:
     TITLE = "🌱 FarmQuest – வேளாண்மை மற்றும் உணவு தொழில்நுட்ப வழிகாட்டி"
     SUBTITLE = "பயிர் • நீர் • மண் • காலநிலை • ஊரக வளர்ச்சி"
@@ -129,13 +165,49 @@ else:
         "தொடக்க நிலை விவசாயிகளுக்கு வழிகாட்டி",
         "ஊரக வளர்ச்சி ஆதரவு"
     ]
-    GOV_SCHEMES = {
-        "PMFBY – பயிர் காப்பீடு": ["விதைப்பு முதல் அறுவடை வரை பாதுகாப்பு", "குறைந்த காப்பீட்டு தொகை", "தொழில்நுட்ப அடிப்படையிலான இழப்பீடு", "Link: https://pmfby.gov.in"],
-        "PM-KISAN": ["நேரடி வருமான உதவி", "விதை, உரம் வாங்க உதவி", "கடன் சார்பு குறைவு", "Link: https://pmkisan.gov.in"],
-        "PMKSY – துளி நீர் பாசனம்": ["100% வரை மானியம்", "30–50% நீர் சேமிப்பு", "உற்பத்தி அதிகரிப்பு", "Link: https://pmksy.gov.in"],
-        "இயற்கை வேளாண்மை": ["மண் வளம் மேம்பாடு", "ஆரோக்கியமான உணவு", "சுற்றுச்சூழல் பாதுகாப்பு", "Link: https://pgsindia-ncof.gov.in"],
-        "TNAU பயிற்சிகள்": ["இலவச பயிற்சி", "உயர் விளைச்சல் முறைகள்", "நிலையான வேளாண்மை", "Link: https://www.tnau.ac.in/"]
-    }
+GOV_SCHEMES = {
+    "PM-KISAN": [
+        "நேரடி வருமான உதவி: சிறிய மற்றும் புறநகர் விவசாயிகளுக்கு நிதி ஆதரவு, விதைகள், உரம், பூச்சிக் கொல்லிகள் வாங்க உதவுகிறது.",
+        "நேரடி நன்மை பரிமாற்றம் (DBT): நிதி நேரடியாக வங்கி கணக்குகளில் செலுத்தப்படுகிறது, வெளிப்படைத்தன்மை மற்றும் ஊழலை குறைக்கிறது.",
+        "வளங்களுக்கான உதவி: விதை, உரம், பூச்சிக் கொல்லிகள் வாங்க உதவி.",
+        "கடன் சார்பு குறைவு: உயர்வான வட்டி கடன் தேவையில்லை.",
+        "பணம் திரும்ப பெறுதல்: மூன்று நிலை தொகை விவசாயிகளுக்கு செறிவான நேரத்தில் கிடைக்கும்.",
+        "முழுமையான வரம்பு: எல்லா விவசாயி குடும்பங்களையும் காப்பு செய்யும்.",
+        "மூல / இணைப்பு: [PM-KISAN அதிகாரப்பூர்வம்](https://share.google/jnXxl3n8oVdnkJe8I)"
+    ],
+    "PMFBY – பயிர் காப்பீடு": [
+        "முழுமையான காப்பீடு: விதைப்பு முதல் அறுவடை வரை, புயல், வெள்ளம் போன்ற இயற்கை நிபந்தனைகளில் ஏற்படும் இழப்புகளையும் பாதுகாக்கிறது.",
+        "குறைந்த காப்பீட்டு தொகை: விவசாயி பங்கு குறைவு, மைய அரசு மற்றும் மாநில அரசு மானியம்.",
+        "தன்னிச்சையான விவசாயிகளுக்கு விருப்ப: கடன் பெற்ற விவசாயிகளுக்கு கட்டாயம், மற்றவர்கள் விருப்பம்.",
+        "தொழில்நுட்ப ஒருங்கிணைப்பு: விளைச்சல் மதிப்பீடு மற்றும் விரைவான கோரிக்கை செயலாக்கத்திற்கு தொழில்நுட்பம் பயன்படுத்தப்படுகிறது.",
+        "வருமான நிலைத்தன்மை: விவசாயிகளை நிலைத்த வேளாண்மையில் வைக்கும், கடன் செல்லும் வழியை ஊக்குவிக்கும், உணவு பாதுகாப்பை உறுதி செய்கிறது.",
+        "மூல / இணைப்பு: [PMFBY அதிகாரப்பூர்வம்](https://share.google/jnXxl3n8oVdnkJe8I)"
+    ],
+    "PMKSY – துளி நீர் பாசனம்": [
+        "உயர் நிதி உதவி: சிறிய மற்றும் புறநகர் விவசாயிகள் 100% மானியம் பெறலாம்; பெரிய விவசாயிகள் 75% வரை பெறுவர்.",
+        "நீர் சேமிப்பு: வழக்கமான வெள்ளம் பாசன முறைசெயலுக்கு 30–50% அதிக சேமிப்பு.",
+        "உற்பத்தி அதிகரிப்பு: செடி வேரில் நேரடியாக நீர் மற்றும் உரங்களை அளிப்பதால் 20–50% விளைச்சல் அதிகரிப்பு.",
+        "செலவுகள் குறைவு: உழவு, உரம் மற்றும் மின்சாரம் செலவைக் குறைக்கும்.",
+        "பயிர் தரம் மேம்பாடு: நிலையான ஈரப்பதம், உயர் தரமுள்ள விளைச்சல், பூச்சி/நோய் கட்டுப்பாடு.",
+        "சரியான நிலப்பயன்பாடு: பல்வேறு நிலத்துக்கு ஏற்றது, எல்லா நிலங்களுக்கும்.",
+        "மூல / இணைப்பு: [PMKSY அதிகாரப்பூர்வம்](https://share.google/MRCbNEjHRKQJaugRJ)"
+    ],
+    "இயற்கை வேளாண்மை": [
+        "சுற்றுச்சூழல் நிலைத்தன்மை: மண் அடர்த்தி குறைவு, இரசாயன நீர் மாசுபாடு குறைவு, பயனுள்ள உயிரினங்களுக்கு வாழிடம்.",
+        "மண் வளம் மேம்பாடு: உரம் மற்றும் கம்போஸ்ட் பயன்படுத்தல் மூலம் நீண்டகால விளைச்சல்.",
+        "விவசாயிகளுக்கு பொருளாதார நன்மை: குறைந்த செயற்கை செலவு, உயர் விலை சந்தை மூலம் அதிக வருமானம்.",
+        "ஆரோக்கியமான உணவு: இரசாயன தடுப்பு இல்லாமல், அதிக ஊட்டச்சத்து கொண்ட உணவு.",
+        "காலநிலை மாற்ற தடுப்பு: குறைந்த எரிசக்தி பயன்படுத்தல், நிலத்தில் கார்பன் அதிகம் சேர்க்கும்.",
+        "மூல / இணைப்பு: [TNAU Organic Farming](https://share.google/LcCgauk8WZlMffh6V)"
+    ],
+    "TNAU பயிற்சிகள்": [
+        "நிதி & வளங்கள்: சிறிய மற்றும் புறநகர் விவசாயிகளுக்கு விலை தடைகளை நீக்குகிறது, இயந்திர உதவி மற்றும் மானியம் பயன்படுத்த பயிற்சி.",
+        "உயர் விளைச்சல் & தரம்: சிறந்த விதை தேர்வு, ஒருங்கிணைந்த பூச்சிக் கட்டுப்பாடு (IPM), மேம்பட்ட பாசனம் மூலம் உயர் விளைச்சல்.",
+        "நிலையான நடைமுறை: வளங்களை திறம்பட பயன்படுத்துதல், இரசாயன பூச்சி/உரம் குறைப்பு, மண் நலம் மேம்பாடு, சுற்றுச்சூழல் பாதுகாப்பு.",
+        "மூல / இணைப்பு: [TNAU Agritech Portal](https://share.google/sek8t8VcUSNS31fRE)"
+    ]
+}
+
 
 # -------------------------------------------------
 # TITLE
@@ -186,21 +258,37 @@ with tab1:
         st.success("🎉 All levels completed!")
 
 # -------------------------
-# TAB 2: CROP DATA
+# TAB 2: FULL CROP DATA
 # -------------------------
 crop_data = {
-    "Tomato": {"water": "600–800 mm", "soil": "Loamy", "climate": "20–30°C", "food": "Sauce/Ketchup"},
-    "Brinjal": {"water": "500–700 mm", "soil": "Sandy loam", "climate": "22–35°C", "food": "Curry"},
-    "Onion": {"water": "350–550 mm", "soil": "Sandy loam", "climate": "13–25°C", "food": "Flakes"},
-    "Groundnut": {"water": "500–700 mm", "soil": "Sandy loam", "climate": "20–30°C", "food": "Oil"},
-    "Coconut": {"water": "1300–2300 mm", "soil": "Sandy loam", "climate": "20–35°C", "food": "Copra/Coconut oil"},
+    "Tomato": {"water": "600–800 mm", "soil": "Loamy, well-drained", "climate": "20–30°C", "food": "Seeds, pulp (sauce, ketchup)"},
+    "Brinjal": {"water": "500–700 mm", "soil": "Sandy loam", "climate": "22–35°C", "food": "Seeds"},
+    "Chilli": {"water": "600–900 mm", "soil": "Well-drained loamy", "climate": "20–30°C", "food": "Dry chilli powder, seeds"},
+    "Onion": {"water": "350–550 mm", "soil": "Sandy loam", "climate": "13–25°C", "food": "Onion skins (manure)"},
+    "Ladies Finger": {"water": "500–800 mm", "soil": "Loamy", "climate": "22–35°C", "food": "Seeds"},
+    "Spinach": {"water": "300–500 mm", "soil": "Fertile loamy", "climate": "15–25°C", "food": "Compost material"},
+    "Cucumber": {"water": "700–1200 mm", "soil": "Sandy loam", "climate": "18–30°C", "food": "Seeds"},
+    "Carrot": {"water": "350–550 mm", "soil": "Sandy soil", "climate": "15–25°C", "food": "Leaves (compost)"},
+    "Coriander": {"water": "400–600 mm", "soil": "Loamy", "climate": "18–28°C", "food": "Seeds (spice)"},
+    "Groundnut": {"water": "500–700 mm", "soil": "Sandy loam, well-drained", "climate": "20–30°C", "food": "Groundnut cake (cattle feed), shells"},
+    "Mustard": {"water": "350–500 mm", "soil": "Loamy soil", "climate": "10–25°C", "food": "Mustard cake, leaves (vegetable)"},
+    "Sunflower": {"water": "500–800 mm", "soil": "Loamy, well-drained", "climate": "20–30°C", "food": "Sunflower cake, husk"},
+    "Sesame": {"water": "300–500 mm", "soil": "Sandy loam", "climate": "25–35°C", "food": "Sesame cake, stalks (fuel)"},
+    "Soybean": {"water": "500–700 mm", "soil": "Loamy soil", "climate": "20–30°C", "food": "Soy cake, soy meal"},
+    "Castor": {"water": "400–600 mm", "soil": "Sandy loam", "climate": "20–35°C", "food": "Castor cake (manure), stems"},
+    "Linseed": {"water": "450–650 mm", "soil": "Loamy", "climate": "10–25°C", "food": "Linseed cake, fiber"},
+    "Safflower": {"water": "400–600 mm", "soil": "Loamy, well-drained", "climate": "15–30°C", "food": "Safflower cake, petals (dye)"},
+    "Niger": {"water": "500–800 mm", "soil": "Loamy", "climate": "20–30°C", "food": "Niger cake, bird feed"},
+    "Coconut": {"water": "1300–2300 mm", "soil": "Sandy loam", "climate": "20–35°C", "food": "Copra, coir, shell charcoal"}
 }
+
 with tab2:
     crop = st.selectbox("Select Crop", list(crop_data.keys()))
     st.subheader("💧 Water Requirement"); st.write(crop_data[crop]["water"])
     st.subheader("🌱 Soil Requirement"); st.write(crop_data[crop]["soil"])
     st.subheader("☀️ Climate Requirement"); st.write(crop_data[crop]["climate"])
-    st.subheader("🏭 Food Technology Application"); st.write(crop_data[crop]["food"])
+    st.subheader("🏭 By-product / Food Application"); st.write(crop_data[crop]["food"])
+
 
 # -------------------------
 # TAB 3: GUIDE + AI CHATBOT
@@ -259,3 +347,4 @@ with tab4:
                 st.download_button("⬇️ Download PDF", f, file_name="FarmQuest_Certificate.pdf")
     else:
         st.warning("❌ Complete all 10 levels to unlock certificate")
+
